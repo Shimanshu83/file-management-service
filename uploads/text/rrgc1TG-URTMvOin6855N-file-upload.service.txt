@@ -1,0 +1,44 @@
+Objective of file management api is to :- 
+1. Upload , list , delete API's. 
+2. File categorization functionality ( need to do research on this what the heck is this ). 
+
+
+
+File categorization. 
+
+Here we can categorize file based on file extension name such as 
+
+if (['jpg', 'png', 'gif'].includes(ext)) {
+    return 'images';
+  } else if (['pdf', 'doc', 'docx'].includes(ext)) {
+    return 'documents';
+  } else {
+    return 'others';
+  }
+
+based on file size :- 
+
+small : below 10 mb 
+medium : below 100mb 
+nad large : above 1000mb 
+
+
+
+In this case we need to save the metadata of the file in the rows so it will be 
+helpful for us to deferentiate and categorize it on the basis of the file. 
+
+
+// need to check on the below functionality if it's working or not. 
+**Optimization:**
+
+- Implement file upload and deletion efficiently. use stream for this because this is the only way to upload things faster without blocking thread
+- Minimize unnecessary code execution.
+- Utilize async/await for asynchronous operations.
+- Utilize caching mechanisms for improved performance.
+- Handle errors gracefully. understood. 
+
+**Responsibility Division:**
+
+- Divide the application into well-defined and reusable modules. understood. 
+- Implement SOLID principles for better maintainability. need to understand it in deep 
+- Use Dependency Injection for loose coupling. I know this. 
